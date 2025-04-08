@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu pedido de Açaí!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Açaí da Juju!</h1>
+        <h3>Monte seu pedido!</h3>
+        <!-- Campos para montagem do pedido-->
+        <form id="form-cadastro">
+            <div class="input-group">
+                <label for="tamanho">Tamanho do Açaí (300ml à 750ml):</label>
+                <input type="text" id="tamanho" required>
+            </div>
+            <div class="input-group">
+                <label for="fruta">Escolha uma fruta (morango, banana, kiwi):</label>
+                <input type="text" id="fruta" required>
+            </div>
+            <div class="input-group">
+                <label for="acompanhamento">Escolha granola, leite em pó ou castanha:</label>
+                <input type="text" id="acompanhamento" required>
+            </div>
+            <div class="input-group">
+                <label for="cobertura">Escolha uma cobertura (Nutella ou Leite
+                    Condensado)</label>
+                <input type="text" id="cobertura">
+            </div>
+            <!-- Botão para fazer o pedido -->
+            <button id="submit" type="submit">Fazer pedido</button>
+        </form>
+        <h2>Pedidos</h2>
+        <ul id="pedido-açai"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
